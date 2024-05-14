@@ -1,0 +1,32 @@
+/* body{
+  background-image: url(images/background.png);
+} */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  background-color: transparent;
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App{
+  background-image: url(images/camuflage3.jpg);
+  background-size: auto;
+  background-repeat:repeat;
+  position: relative;
+  /* height: 100%; */
+}
+.App h1{
+  text-align: center;
+  /* margin-top: 25px; */
+  font-size: 65px;
+  color: rgb(61, 199, 61);
+  font-family:'Courier New', Courier, monospace;
+}

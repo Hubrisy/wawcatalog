@@ -1,0 +1,19 @@
+.footer_block{
+    text-align: center;
+    margin: 10px auto 0;
+    padding-bottom: 20px;
+    color: white;
+}
+.footer_line{
+    width: 85vw;
+    margin: 0 auto;
+    height: 3px;
+    background-color: white;
+    margin-top: 20px;
+}
+.footer_title-block{
+    margin-top: 20px;
+}
+.footer_title-block h2{
+    font-size: 24px;
+}
