@@ -83,7 +83,7 @@ const Shop = (props) => {
       {/* <Navigation /> */}
       <Routes>
         <Route
-          path="/"
+          path="/wawcatalog"
           element={<Item items={items} addToCart={addToCart} />}
         />
         <Route path="/item/:id" element={<ItemDescription items={items} addToCart={addToCart} />} />
