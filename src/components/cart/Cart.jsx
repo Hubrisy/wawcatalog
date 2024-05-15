@@ -21,7 +21,7 @@ const Cart = (props) => {
 
   const totalCartPrice = thisCart.reduce((total, cartitem) => total + (cartitem.totalprice * cartitem.count), 0);
   // const itemAmount = thisCart.reduce((total,cartAmount) => total + +(cartAmount.count),0);
-  const itemInfo = thisCart.map(item => `Товар:${item.name} ID:${item.id} Кількість:${item.count} Ціна:${item.price} ◉`);
+  const itemInfo = thisCart.map(item => `Товар:${item.name} ID:${item.id} Кількість:${item.count} Ціна:${item.price} ✓`);
 
 
   return (
