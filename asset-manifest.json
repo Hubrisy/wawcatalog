@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/wawcatalog/static/css/main.9f76d05a.css",
-    "main.js": "/wawcatalog/static/js/main.5bdd27a2.js",
+    "main.js": "/wawcatalog/static/js/main.1d53364d.js",
     "static/js/453.e5ea5797.chunk.js": "/wawcatalog/static/js/453.e5ea5797.chunk.js",
     "static/media/camuflage3.jpg": "/wawcatalog/static/media/camuflage3.0ea358b0a4e0371aa913.jpg",
     "static/media/return.jpg": "/wawcatalog/static/media/return.826f2bda0a1b1097f655.jpg",
     "index.html": "/wawcatalog/index.html",
     "static/media/tick.svg": "/wawcatalog/static/media/tick.32a73997e4726719827b.svg",
     "main.9f76d05a.css.map": "/wawcatalog/static/css/main.9f76d05a.css.map",
-    "main.5bdd27a2.js.map": "/wawcatalog/static/js/main.5bdd27a2.js.map",
+    "main.1d53364d.js.map": "/wawcatalog/static/js/main.1d53364d.js.map",
     "453.e5ea5797.chunk.js.map": "/wawcatalog/static/js/453.e5ea5797.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f76d05a.css",
-    "static/js/main.5bdd27a2.js"
+    "static/js/main.1d53364d.js"
   ]
 }
