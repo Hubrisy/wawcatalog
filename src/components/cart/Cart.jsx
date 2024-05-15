@@ -77,7 +77,7 @@ const Cart = (props) => {
               <div>Загальна кількість: {props.itemAmount} шт.</div>
             </div>
             <div className="cart_form-block">
-              <form action="http://gardenphp/zakaz.php" className="cart_form" method="post">
+              <form action="https://serverphp.wawteh.tech/zakaz.php" className="cart_form" method="post">
                 <input className="form_input" placeholder="Введіть ваше ім'я" type="text" name="name" id="" />
                 <input className="form_input" placeholder="Введіть ваш номер телефону" type="tel" name="phone" id="" />
                 <input type="hidden" name="comment" value={`Загальна ціна: ${totalCartPrice},Товар: ${itemInfo}`} />
