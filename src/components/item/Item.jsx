@@ -4,6 +4,18 @@ import "./item.css";
 
 const Item = (props) => {
 
+  const addandalert = (item) => {
+    props.addToCart(
+      item.currentPrice,
+      item.itemName,
+      item.count,
+      item.itemImg,
+      item.totalPrice,
+      item.id
+    );
+    props.applyVision();
+  }
+
   return (
     <div className="item_block">
       {props.items.map((item) => (
@@ -17,13 +29,17 @@ const Item = (props) => {
             <div className="current_price">{item.currentPrice}грн</div>
           </div>
           <div className="button_container">
-           
-              <Link to={`/item/${item.id}`} className="blue">
-              <button className="blue">
-                Докладніше
-                </button>
-              </Link>
-            <button className="orange" onClick={() => props.addToCart(item.currentPrice,item.itemName,item.count,item.itemImg,item.totalPrice,item.id)}>Додати в корзину</button>
+            <Link to={`/item/${item.id}`} className="blue">
+              <button className="blue">Докладніше</button>
+            </Link>
+            <button
+              className="orange"
+              onClick={() =>
+                addandalert(item)
+              }
+            >
+              Додати в корзину
+            </button>
           </div>
         </div>
       ))}

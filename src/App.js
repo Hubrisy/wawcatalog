@@ -10,7 +10,25 @@ function App() {
  
   const [isVisible,seIstVisible] = useState(false);
   const [cart, setCart] = useState([]);
+  const [applyVisible, setIsApplyVisible] = useState(false)
  
+
+
+  // const applyVision = () => {
+  //   setIsApplyVisible(!applyVisible);
+  //   if (!applyVisible) {
+  //     setTimeout(() => {
+  //       document.querySelector('.apply').style.display = 'block';
+  //     }, 5000);
+  //   }
+  // };
+
+  const applyVision = () => {
+    setIsApplyVisible(!applyVisible); // Сразу устанавливаем видимость
+    setTimeout(() => {
+      setIsApplyVisible(applyVisible); // Через 5 секунд снова скрываем
+    }, 2000);
+  };
 
   const switchVisible = () => {
     seIstVisible(!isVisible)
@@ -19,11 +37,17 @@ function App() {
     }
   }
 
+
   return (
     <BrowserRouter>
     <div className="App">
+      <div className={applyVisible ? 'apply visible' : 'apply'}>
+        <div className='apply_text'>
+          Товар додано!
+        </div>
+      </div>
       <Header switchVisible={switchVisible} cart={cart} />
-      <Shop isVisible={isVisible} cart={cart} setCart={setCart}  />
+      <Shop isVisible={isVisible} cart={cart} setCart={setCart} applyVision={applyVision} />
       <Footer />
     </div>
     </BrowserRouter>

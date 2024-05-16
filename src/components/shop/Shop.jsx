@@ -84,7 +84,7 @@ const Shop = (props) => {
       <Routes>
         <Route
           path="/wawcatalog"
-          element={<Item items={items} addToCart={addToCart} />}
+          element={<Item items={items} addToCart={addToCart} applyVision={props.applyVision} />}
         />
         <Route path="/item/:id" element={<ItemDescription items={items} addToCart={addToCart} />} />
       </Routes>
