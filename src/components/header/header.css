@@ -123,4 +123,10 @@
     .header_block{
         top: 45px;
     }
+    .line{
+        margin-top: 40px;
+    }
+    .cart_icon{
+        top: 130px;
+    }
 }
